@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6EBC6ABF-CE74-425B-A80B-4DB9F9FF8558}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PAW_Proiect_Gestionare_Rezervari_Restaurante</RootNamespace>
+    <AssemblyName>PAW-Proiect_Gestionare_Rezervari_Restaurante</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdaugaRezervari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugaRezervari.Designer.cs">
+      <DependentUpon>AdaugaRezervari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adauga_Meniu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adauga_Meniu.Designer.cs">
+      <DependentUpon>Adauga_Meniu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProdAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProdAdd.Designer.cs">
+      <DependentUpon>FormProdAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProdusMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProdusMod.Designer.cs">
+      <DependentUpon>FormProdusMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestionare_Clienti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestionare_Clienti.Designer.cs">
+      <DependentUpon>Gestionare_Clienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grafice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafice.Designer.cs">
+      <DependentUpon>Grafice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clienti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clienti.Designer.cs">
+      <DependentUpon>Clienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meniu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meniu.Designer.cs">
+      <DependentUpon>Meniu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produse.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VizualizareRezervari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VizualizareRezervari.Designer.cs">
+      <DependentUpon>VizualizareRezervari.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdaugaRezervari.resx">
+      <DependentUpon>AdaugaRezervari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adauga_Meniu.resx">
+      <DependentUpon>Adauga_Meniu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clienti.resx">
+      <DependentUpon>Clienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProdAdd.resx">
+      <DependentUpon>FormProdAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProdusMod.resx">
+      <DependentUpon>FormProdusMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestionare_Clienti.resx">
+      <DependentUpon>Gestionare_Clienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grafice.resx">
+      <DependentUpon>Grafice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Meniu.resx">
+      <DependentUpon>Meniu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VizualizareRezervari.resx">
+      <DependentUpon>VizualizareRezervari.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cafe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
